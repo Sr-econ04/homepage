@@ -24,7 +24,7 @@ body {
   padding: 0;
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   overflow-x: hidden;
   line-height: 1.7;
@@ -60,7 +60,6 @@ body::after {
   0% {
     transform: translate(0, 0) scale(1);
   }
-
   100% {
     transform: translate(50px, 50px) scale(1.1);
   }
@@ -108,7 +107,7 @@ h2 {
 
 p {
   color: var(--text-sub);
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   margin-bottom: 1.5em;
 }
 
@@ -123,7 +122,7 @@ ul li {
   margin-bottom: 14px;
   padding-left: 28px;
   color: var(--text-color);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 ul li::before {
@@ -152,7 +151,7 @@ a.back-link {
   font-weight: 400;
   display: block;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 .menu a:hover,
@@ -178,8 +177,6 @@ a.back-link:hover {
   box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
 }
 
-}
-
 /* Works Page Styles */
 .works-list {
   display: grid;
@@ -203,7 +200,7 @@ a.back-link:hover {
 .work-item h3 {
   margin: 0 0 10px 0;
   color: var(--accent-secondary);
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 }
 
 .work-item p {
@@ -217,7 +214,7 @@ a.back-link:hover {
   text-decoration: none;
   font-weight: 600;
   font-size: 0.9rem;
-  padding: 8px 16px;
+  padding: 10px 18px;
   border: 1px solid var(--accent-primary);
   border-radius: 8px;
   transition: all 0.2s ease;
@@ -226,16 +223,6 @@ a.back-link:hover {
 .work-link:hover {
   background: var(--accent-primary);
   color: #fff;
-}
-
-@media (max-width: 600px) {
-  .container {
-    padding: 30px 20px;
-  }
-
-  h1 {
-    font-size: 2.2rem;
-  }
 }
 
 /* Inline avatar next to the name */
@@ -252,6 +239,7 @@ a.back-link:hover {
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--accent-primary);
+  flex-shrink: 0;
 }
 
 .name-text {
@@ -263,12 +251,12 @@ a.back-link:hover {
 /* Social link styling */
 .social-link {
   display: inline-block;
-  margin-top: 2em;
+  margin-top: 1.5em;
   margin-bottom: 1em;
   color: var(--accent-secondary);
   text-decoration: none;
   font-weight: 600;
-  padding: 10px 20px;
+  padding: 12px 22px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--glass-border);
   border-radius: 12px;
@@ -278,4 +266,76 @@ a.back-link:hover {
   background: var(--accent-primary);
   color: #fff;
   transform: translateY(-2px);
+}
+
+/* Contact Page Styles */
+.contact-intro {
+  color: var(--text-sub);
+  font-size: 1.05rem;
+  margin-bottom: 2em;
+  line-height: 1.8;
+}
+
+.email-card {
+  margin-top: 2em;
+  padding: 30px 24px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.email-card p {
+  font-size: 0.95rem;
+  margin: 0 0 12px 0;
+  color: var(--text-sub);
+}
+
+.email-card a {
+  color: var(--accent-secondary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+  word-break: break-all;
+}
+
+.email-card a:hover {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    width: 92%;
+    padding: 28px 20px;
+    border-radius: 20px;
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  p, ul li {
+    font-size: 1rem;
+  }
+
+  .menu a,
+  a.back-link {
+    padding: 16px 20px;
+    font-size: 1rem;
+  }
+
+  .work-item {
+    padding: 16px;
+  }
+
+  .email-card a {
+    font-size: 1rem;
+  }
 }

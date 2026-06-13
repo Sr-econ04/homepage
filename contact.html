@@ -4,116 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>お問い合わせ</title>
+  <title>お問い合わせ | Sr</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .contact-intro {
-      color: var(--text-sub);
-      font-size: 1.05rem;
-      margin-bottom: 2em;
-      line-height: 1.8;
-    }
-
-    .contact-form {
-      display: grid;
-      gap: 20px;
-      margin-top: 1.5em;
-    }
-
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .form-group label {
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: var(--accent-secondary);
-      letter-spacing: 0.04em;
-    }
-
-    .form-group input,
-    .form-group textarea {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid var(--glass-border);
-      border-radius: 12px;
-      padding: 14px 18px;
-      color: var(--text-color);
-      font-family: 'Outfit', sans-serif;
-      font-size: 1rem;
-      outline: none;
-      transition: border-color 0.25s ease, box-shadow 0.25s ease;
-      resize: none;
-    }
-
-    .form-group input::placeholder,
-    .form-group textarea::placeholder {
-      color: rgba(203, 213, 225, 0.4);
-    }
-
-    .form-group input:focus,
-    .form-group textarea:focus {
-      border-color: var(--accent-primary);
-      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
-      background: rgba(255, 255, 255, 0.06);
-    }
-
-    .form-group textarea {
-      min-height: 150px;
-    }
-
-    .submit-btn {
-      margin-top: 8px;
-      padding: 18px 24px;
-      background: var(--accent-primary);
-      border: none;
-      border-radius: 16px;
-      color: #fff;
-      font-family: 'Outfit', sans-serif;
-      font-size: 1.1rem;
-      font-weight: 600;
-      cursor: pointer;
-      letter-spacing: 0.03em;
-      transition: all 0.25s ease-out;
-    }
-
-    .submit-btn:hover {
-      background: #4f52d8;
-      transform: translateY(-3px);
-      box-shadow: 0 10px 20px rgba(99, 102, 241, 0.35);
-    }
-
-    .submit-btn:active {
-      transform: translateY(0);
-    }
-
-    .email-direct {
-      margin-top: 2.5em;
-      padding: 18px 24px;
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid var(--glass-border);
-      border-radius: 16px;
-      text-align: center;
-    }
-
-    .email-direct p {
-      font-size: 0.95rem;
-      margin: 0 0 8px 0;
-      color: var(--text-sub);
-    }
-
-    .email-direct a {
-      color: var(--accent-secondary);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1rem;
-    }
-
-    .email-direct a:hover {
-      color: #fff;
-    }
-  </style>
 </head>
 
 <body>
@@ -121,69 +13,14 @@
     <h1>Contact</h1>
 
     <p class="contact-intro">
-      ご質問・ご連絡はこちらからどうぞ。<br>
-      フォームに入力して送信するか、直接メールでご連絡いただけます。
+      ご質問・ご連絡はお気軽にどうぞ。<br>
+      以下のメールアドレスまでご連絡ください。
     </p>
 
-    <h2>お問い合わせフォーム</h2>
+    <h2>メールアドレス</h2>
 
-    <form
-      class="contact-form"
-      action="https://formsubmit.co/Srecon04@gmail.com"
-      method="POST"
-    >
-      <input type="hidden" name="_subject" value="【ポートフォリオ】お問い合わせ">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://example.com/thanks.html">
-
-      <div class="form-group">
-        <label for="name">お名前</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="山田 太郎"
-          required
-        >
-      </div>
-
-      <div class="form-group">
-        <label for="email">メールアドレス</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="example@email.com"
-          required
-        >
-      </div>
-
-      <div class="form-group">
-        <label for="subject">件名</label>
-        <input
-          type="text"
-          id="subject"
-          name="subject"
-          placeholder="お問い合わせの件名"
-          required
-        >
-      </div>
-
-      <div class="form-group">
-        <label for="message">メッセージ</label>
-        <textarea
-          id="message"
-          name="message"
-          placeholder="お問い合わせ内容をご記入ください"
-          required
-        ></textarea>
-      </div>
-
-      <button type="submit" class="submit-btn">送信する</button>
-    </form>
-
-    <div class="email-direct">
-      <p>直接メールを送る場合はこちら</p>
+    <div class="email-card">
+      <p>お問い合わせ先</p>
       <a href="mailto:Srecon04@gmail.com">Srecon04@gmail.com</a>
     </div>
 
