@@ -197,24 +197,25 @@ a.back-link {
   flex-shrink: 0;
 }
 
-.menu a:nth-child(1)::before { background: var(--accent-primary); }
-.menu a:nth-child(2)::before { background: var(--accent-secondary); }
+.menu a:nth-child(1)::before { background: var(--accent-secondary); }
+.menu a:nth-child(2)::before { background: var(--accent-teal); }
 .menu a:nth-child(3)::before { background: var(--accent-violet); }
-.menu a:nth-child(4)::before { background: var(--accent-teal); }
+.menu a:nth-child(4)::before { background: var(--accent-primary); }
 .menu a:nth-child(5)::before { background: var(--accent-red); }
+.menu a:nth-child(6)::before { background: #8aab9c; }
 
 .menu a:nth-child(1):hover {
-  background: rgba(110, 114, 168, 0.12);
-  border-color: var(--accent-primary);
-  color: var(--accent-primary);
-  box-shadow: 0 10px 20px rgba(110, 114, 168, 0.15);
-}
-
-.menu a:nth-child(2):hover {
   background: rgba(111, 155, 181, 0.12);
   border-color: var(--accent-secondary);
   color: var(--accent-secondary);
   box-shadow: 0 10px 20px rgba(111, 155, 181, 0.15);
+}
+
+.menu a:nth-child(2):hover {
+  background: rgba(90, 156, 143, 0.12);
+  border-color: var(--accent-teal);
+  color: var(--accent-teal);
+  box-shadow: 0 10px 20px rgba(90, 156, 143, 0.15);
 }
 
 .menu a:nth-child(3):hover {
@@ -225,10 +226,10 @@ a.back-link {
 }
 
 .menu a:nth-child(4):hover {
-  background: rgba(90, 156, 143, 0.12);
-  border-color: var(--accent-teal);
-  color: var(--accent-teal);
-  box-shadow: 0 10px 20px rgba(90, 156, 143, 0.15);
+  background: rgba(110, 114, 168, 0.12);
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+  box-shadow: 0 10px 20px rgba(110, 114, 168, 0.15);
 }
 
 .menu a:nth-child(5):hover {
@@ -236,6 +237,13 @@ a.back-link {
   border-color: var(--accent-red);
   color: var(--accent-red);
   box-shadow: 0 10px 20px rgba(176, 101, 96, 0.15);
+}
+
+.menu a:nth-child(6):hover {
+  background: rgba(138, 171, 156, 0.12);
+  border-color: #8aab9c;
+  color: #8aab9c;
+  box-shadow: 0 10px 20px rgba(138, 171, 156, 0.15);
 }
 
 .menu a:hover,
@@ -418,6 +426,61 @@ a.back-link:hover {
 
 .email-card a:hover {
   color: #fff;
+}
+
+/* Note Page Styles */
+.subtitle {
+  color: var(--text-sub);
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  margin-top: -0.5em;
+  margin-bottom: 1.5em;
+  opacity: 0.8;
+}
+
+.note-btn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 2em;
+  padding: 18px 24px;
+  background: rgba(110, 114, 168, 0.1);
+  border: 1px solid var(--accent-primary);
+  border-radius: 16px;
+  color: var(--accent-primary);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.note-btn:hover {
+  background: rgba(110, 114, 168, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(110, 114, 168, 0.2);
+  color: var(--text-color);
+  border-color: var(--accent-primary);
+}
+
+.note-link-card {
+  margin-top: 1em;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(110, 114, 168, 0.25);
+  border-radius: 16px;
+  text-align: center;
+}
+
+.note-link-card a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+  word-break: break-all;
+}
+
+.note-link-card a:hover {
+  color: var(--text-color);
 }
 
 /* Responsive */
