@@ -3,7 +3,7 @@
 経済学部に在籍する学生の個人ポートフォリオサイトです。
 プロフィール、興味分野、制作物の紹介、お問い合わせ先をまとめています。
 
-🔗 **URL**: https://sr-econ04.github.io/<!-- 公開URLに合わせて修正してください -->
+🔗 **URL**: https://sr-econ04.github.io/homepage/index.html
 
 ## ページ構成
 
