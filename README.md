@@ -11,7 +11,7 @@
 - `profile-ja.html` ― プロフィール（日本語）
 - `profile-en.html` ― Profile（English）
 - `works.html` ― 制作物一覧
-- `note.html` ― NAZE: Lab(note)
+- `note.html` ― note
 - `contact.html` ― お問い合わせ
 
 ## Contact
